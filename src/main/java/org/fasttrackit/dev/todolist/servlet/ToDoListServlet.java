@@ -134,6 +134,18 @@ public class ToDoListServlet extends HttpServlet {
 
         String value = request.getParameter(VALUE_NEWTASK);
 
+        //b
+        if(value.length()>15) {
+            System.out.println("nope");
+            return;
+        }
+
+        if(value.contains("a")) {
+            System.out.println("repl");
+            //value.replace("a","A");
+            return;
+        }
+
 
         MyListOfToDoMock myListObject = MyListOfToDoMock.getInstance();
         myListObject.printList();
