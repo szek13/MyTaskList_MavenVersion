@@ -140,11 +140,7 @@ public class ToDoListServlet extends HttpServlet {
             return;
         }
 
-        if(value.contains("a")) {
-            System.out.println("repl");
-            //value.replace("a","A");
-            return;
-        }
+
 
 
         MyListOfToDoMock myListObject = MyListOfToDoMock.getInstance();
