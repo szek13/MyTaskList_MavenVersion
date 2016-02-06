@@ -7,10 +7,14 @@ package org.fasttrackit.dev.todolist;
 public class ToDoBean {
 
 
-    ToDoBean(int id, String value) {
+    public ToDoBean() {
+    }
+
+    ToDoBean(int id, String value, String dd) {
         this.id=id;
         this.whatToDo=value;
         isDone=false;
+        dueDate=dd;
     }
 
     public int getId() {
@@ -40,5 +44,15 @@ public class ToDoBean {
     private int id;
     private String whatToDo;
     private boolean isDone;
+
+    public String getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    private String dueDate;
 
 }
