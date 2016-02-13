@@ -78,8 +78,10 @@ public class ToDoListServlet extends HttpServlet {
         String  jsonResponse;
         if(notLogin)
             jsonResponse = "{\"keyError\":\"You are not logged in\"}";
-        else
-            jsonResponse = "{\"keyError\":\"Hello my friend\"}";
+        else {
+            String username=(String)request.getSession().getAttribute("username");
+            jsonResponse = "{\"keyError\":\"Hello my friend "+username+"\"}";
+        }
         returnJsonResponse(response, jsonResponse.toString());
         System.out.println("end list action");
     }
