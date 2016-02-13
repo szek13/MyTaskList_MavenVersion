@@ -51,6 +51,7 @@ public class ToDoListServlet extends HttpServlet {
         if(username==null)
         {
             System.out.println("nu esti logat nene");
+            notLoginAction(request, response, true);
         }
         else {
             System.out.println("bravo, esti un user deja logat");
@@ -65,11 +66,23 @@ public class ToDoListServlet extends HttpServlet {
             } else if (action != null && action.equals(DONE_ACTION)) {
                 doneAction(request, response);
             }
+            else if (action != null && action.equals("seeLogin")) {
+                notLoginAction(request, response, false);
+            }
         }
 
     }
 
-
+    private void notLoginAction(HttpServletRequest request, HttpServletResponse response, boolean notLogin)
+    {
+        String  jsonResponse;
+        if(notLogin)
+            jsonResponse = "{\"keyError\":\"You are not logged in\"}";
+        else
+            jsonResponse = "{\"keyError\":\"Hello my friend\"}";
+        returnJsonResponse(response, jsonResponse.toString());
+        System.out.println("end list action");
+    }
 
     private void listAction(HttpServletRequest request, HttpServletResponse response) {
 

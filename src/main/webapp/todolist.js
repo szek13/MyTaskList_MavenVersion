@@ -21,6 +21,12 @@ function listTasks(tasks) {
 }
 
 
+function listLogin(keyError) {
+    var elem = document.getElementById('login');
+
+    elem.innerHTML = keyError;
+}
+
 function markDone(id) {
     $.ajax({
         url: 'items?action=done&id='+id
@@ -36,6 +42,15 @@ function loadTasks() {
         listTasks(response.tasks);
     });
 }
+
+function islogin() {
+    $.ajax({
+        url: 'items?action=seeLogin'
+    }).done(function (response) {
+        listLogin(response.keyError);
+    });
+}
+
 
 function addTask() {
     var toDoText = document.getElementById('todoid').value;
