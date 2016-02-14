@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 
         // static & simulated db row
         final String dbu="ionel";
-        final String dbp="anaaremere";
+        final String dbp="anaaremere1";
         final String userid="356";
 
 
@@ -59,6 +59,9 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession(true);
             session.setAttribute("username",user);
             session.setAttribute("usernameid",userid);
+
+
+
             String success = "/todolist.html";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(success);
             dispatcher.forward(request, response);
