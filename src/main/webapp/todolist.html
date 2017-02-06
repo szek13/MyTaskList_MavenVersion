@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+
+
+    </style>
+
     <meta charset="UTF-8">
     <title>My ToDo List</title>
 
@@ -12,8 +17,14 @@
 </head>
 <body>
 
+<div id="header">
 
-<h2>My ToDo List</h2>
+    <h2>My ToDo List</h2>
+
+</div>
+
+
+
 <div id="listOfTasks">
     <ul>
 
@@ -21,8 +32,9 @@
 </div>
 
 
-<a href="addtodolist.html">Add a new task here</a>
 
+
+<input id="myBbutton" type="button" onclick="location.href='addtodolist.html';" value="Add a new task here" />
 
 <script>
     loadTasks();

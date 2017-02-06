@@ -1,6 +1,56 @@
-#listOfTasks {
+body{
+    background-color: #94ffb6;
+    background-image: url("http://www.trendsnhealth.com/wp-content/uploads/2014/01/interro-bang.jpg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: 850px;
+    background-position-y: 50px;
+}
+
+#header {
+    position: absolute;
+    text-align: center;
+    text-shadow: blue 3px 3px;
+    border: 1px outset lime;
+    background-color: aqua;
+    width: 48.5%;
     margin: 10px;
+    padding: 10px;
+    font-family: Harrington;
+    box-shadow: steelblue 5px 5px 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+#listOfTasks {
+    border: 1px outset steelblue;
+    position: absolute;
+    top: 110px;
+    background-color: aquamarine;
+    width: 50%;
+    margin: 10px;
+    box-shadow: 15px 15px 10px lightblue;
+    border-radius: 10px;
 }
 #listOfTasks ul {
     list-style: none;
+}
+
+#myBbutton{
+    position: absolute;
+    top: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: darkcyan 5px 5px 5px;
+    padding: 3px;
+    margin: 10px;
+    background-color: cadetblue;
+}
+
+#myBbutton:hover{
+    background-color: azure;
+    box-shadow: aqua 5px 5px 5px;
 }
