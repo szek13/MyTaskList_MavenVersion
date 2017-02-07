@@ -1,5 +1,5 @@
-body{
-    background-color: #94ffb6;
+#bodytodolist{
+    background-color: aliceblue;
     background-image: url("http://www.trendsnhealth.com/wp-content/uploads/2014/01/interro-bang.jpg");
     background-repeat: no-repeat;
     background-size: 30%;
@@ -7,33 +7,39 @@ body{
     background-position-y: 50px;
 }
 
+#bodyaddtodolist{
+    background-color: rgba(25, 242, 17, 0.42);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2e/Exclamation_mark_red.png");
+    background-repeat: no-repeat;
+    background-position-x: 850px;
+    background-position-y: 50px;
+}
+
+
 #header {
     position: absolute;
     text-align: center;
-    text-shadow: blue 3px 3px;
+    text-shadow: lightblue 3px 3px;
     border: 1px outset lime;
     background-color: aqua;
     width: 48.5%;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
-    font-family: Harrington;
+    font-family: "Baskerville Old Face";
     box-shadow: steelblue 5px 5px 5px;
     border-radius: 10px;
 }
 
-
-
-
-
 #listOfTasks {
     border: 1px outset steelblue;
     position: absolute;
-    top: 110px;
+    top: 140px;
     background-color: aquamarine;
     width: 50%;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 15px 15px 10px lightblue;
     border-radius: 10px;
+    font-family: "Bookman Old Style";
 }
 #listOfTasks ul {
     list-style: none;
@@ -41,16 +47,49 @@ body{
 
 #myBbutton{
     position: absolute;
-    top: 300px;
+    top: 350px;
+    margin-left: 250px;
+    border-radius: 5px;
+    box-shadow: darkcyan 5px 5px 5px;
+    padding: 3px;
+    background-color: rgba(65, 242, 76, 0.81);
+    font-family: "Lucida Calligraphy";
+}
+
+#Buttonadd{
+    position: absolute;
+    top: 100px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: darkcyan 5px 5px 5px;
     padding: 3px;
     margin: 10px;
-    background-color: cadetblue;
+    background-color: rgba(25, 242, 17, 0.84);
+    font-family: "Lucida Calligraphy";
+
 }
 
 #myBbutton:hover{
-    background-color: azure;
+    background-color: rgba(88, 255, 112, 0.69);
     box-shadow: aqua 5px 5px 5px;
+}
+
+#Buttonadd:hover{
+    background-color: rgba(88, 255, 112, 0.69);
+    box-shadow: aqua 5px 5px 5px;
+}
+
+#add{
+    margin: 10px;
+    top: 60px;
+    height: 35px;
+    width: 75px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgba(121, 158, 242, 0.42);
+    font-family: "Lucida Calligraphy";
+}
+
+#add:hover{
+    background-color: aquamarine;
 }
