@@ -58,12 +58,11 @@
 
 #Buttonadd{
     position: absolute;
-    top: 100px;
-    margin: 10px;
+    top: 200px;
+    margin-left: 25px;
     border-radius: 5px;
     box-shadow: darkcyan 5px 5px 5px;
     padding: 3px;
-    margin: 10px;
     background-color: rgba(25, 242, 17, 0.84);
     font-family: "Lucida Calligraphy";
 
@@ -80,8 +79,8 @@
 }
 
 #add{
-    margin: 10px;
-    top: 60px;
+    margin-left: 25px;
+    top: 40px;
     height: 35px;
     width: 75px;
     border-radius: 5px;
@@ -92,4 +91,17 @@
 
 #add:hover{
     background-color: aquamarine;
+}
+
+
+#input{
+    background-color: rgba(135, 242, 99, 0.58);
+    width: 450px;
+    height: 45px;
+    padding: 15px;
+    top: 5px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border: 1px outset darkblue;
+    box-shadow: cadetblue 3px 5px 3px;
 }
